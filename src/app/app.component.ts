@@ -8,6 +8,7 @@ import { Product } from './models/product.model';
 })
 export class AppComponent {
   imgParent = 'https://static.platzi.com/media/user_upload/bike-143dcfe9-3190-49fd-88f7-d3bf74182072.jpg';
+  showImage = true;
 
   products: Product[] = [
     {
@@ -38,5 +39,9 @@ export class AppComponent {
 
   onLoaded(img: string){
     console.log('Log Padre', img);
+  }
+
+  toggleImage(){
+    this.showImage = !this.showImage;
   }
 }
