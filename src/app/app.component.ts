@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'my-store-cmpts-y-servicios';
+  imgParent = 'https://www.w3schools.com/howto/img_avatar.png';
+
+  onLoaded(img: string){
+    console.log('Log Padre', img);
+  }
 }
