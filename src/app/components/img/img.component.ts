@@ -19,8 +19,8 @@ export class ImgComponent implements OnInit, OnChanges, AfterViewInit, OnDestroy
   @Output() loaded = new EventEmitter<string>();
 
   imageDefault = '../../../assets/default.png';
-  counter = 0;
-  counterFn: number | undefined;
+/*   counter = 0;
+  counterFn: number | undefined; */
 
 
 
@@ -39,11 +39,11 @@ export class ImgComponent implements OnInit, OnChanges, AfterViewInit, OnDestroy
   }
   ngOnInit(): void {
     //antes del render, se pueden hacer llamadas async, corre una sola vez
-    console.log('ngOnInit', 'imgValue =>', this.img)
+   /*  console.log('ngOnInit', 'imgValue =>', this.img)
     this.counterFn = window.setInterval(()=> {
       this.counter += 1;
       console.log('run counter')
-    }, 1000);
+    }, 1000); */
   }
   ngAfterViewInit(){
     //despues de que el html de los hijos de este componente se han renderizado,
@@ -53,7 +53,7 @@ export class ImgComponent implements OnInit, OnChanges, AfterViewInit, OnDestroy
   ngOnDestroy(){
     //Evento que se ejecuta cuando se elimina el componente, es util para eliminar
     //procesos que no se destruyen al destruir el componente en el html
-    window.clearInterval(this.counterFn);
+    //window.clearInterval(this.counterFn);
   }
 
 
