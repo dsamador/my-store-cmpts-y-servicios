@@ -33,7 +33,7 @@ export class ImgComponent implements OnInit, OnChanges, AfterViewInit, OnDestroy
     //corre antes de renderizar y durante el renderizado
     //vigila los cambios en todos los @Inputs, es un escuchador
     //si queremos saber granularmente los cambios en los inputs toca hacer
-    //uso de un set
+    //uso de un set como vemos en la linea 12
     console.log('ngOnchanges', 'imgValue =>', this.img);
     console.log('changes', changes)
   }
