@@ -6,7 +6,10 @@
 </p>
 <p>Today: {{ today | date: 'short'}}</p>
 <p>Today: {{ today | date: 'yyyy.dd.MM'}}</p>
-<p>Today: {{ 'hOla asdpp' | uppercase}}</p>
+<p>Todo uppercase: {{ 'hOla asdpp' | uppercase}}</p>
+<p>Cadena a la reversa: {{ 'hOla asdpp' | reverse}}</p>
+<p>Today: {{ today | timeAgo}}</p>
+<p>Pipe nuevo: {{ 'cadena que tiene letras en vez de vocales' | numLetras}}</p>
 
 <div class="products--grid">
   <app-product
